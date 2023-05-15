@@ -241,3 +241,50 @@ def fibonacci_lru(num):
 @set_unit("cm^3")
 def volume(radius, height):
     return math.pi * radius**2 * height
+
+
+def test_example():
+    print('test_example..')
+
+
+if __name__ == '__main__':
+    print(say_hello('xuelian'))
+
+    print(be_awesome('xuelian'))
+    print(greet_bob(say_hello))
+    print(greet_bob(be_awesome))
+    print(parent(1)())
+    print(parent(2)())
+
+    temp = not_during_the_night(test_example)
+    temp()
+    temp = my_decorator(test_example)
+    temp()
+
+    say_whee()
+    say_whee_twice()
+    print(return_greeting('xuelian'))
+
+    temp = decorator(test_example)
+    temp()
+
+    waste_some_time(5)
+
+    make_greeting('xuelian', age=20)
+
+    approximate_e(10)
+
+    # countdown(2)
+
+    print(say_hi('xuelian'))
+    print(be_cool('yang_xuelian'))
+    randomly_greet('xuelian')
+
+    obj = Circle(5.2)
+    print(obj.cylinder_volume(5.2))
+
+    obj = TimeWaster(2)
+    obj.waste_time(3)
+
+    greet('xuelian')
+    pass
